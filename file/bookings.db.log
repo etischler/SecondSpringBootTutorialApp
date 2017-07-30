@@ -1,0 +1,4 @@
+/*C22*/SET SCHEMA PUBLIC
+drop table hotel_booking if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table hotel_booking (id bigint not null, hotel_name varchar(255), nb_of_nights integer not null, price_per_night double not null, primary key (id))
